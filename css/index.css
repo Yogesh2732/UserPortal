@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(127,0,255);
+    background: linear-gradient(90deg, rgba(127,0,255,0.14953271028037385) 0%, rgba(225,0,255,0.15420560747663548) 100%);
+}
+
+
+
+#page{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    padding: 50px 25px;
+}
+
+#login{
+    display: block;
+}
+#signup{
+    display: none;
+}
+
+#login h1,#signup h1{
+    font-family: "Ubuntu", sans-serif;
+}
+
+#login_email,#login_password{
+    border: none;
+    padding: 10px;
+    padding-left: 3px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    outline: none;
+    color: #727272;
+}
+
+#login_frm{
+    margin-top: 30px;
+}
+#signup_frm{
+    margin-top: 10px;
+}
+
+#login_btn,#signup_btn{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-family: "Ubuntu", sans-serif ;
+    font-size: 16px;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#login p,#signup p{
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+#login span,#signup span{
+    color: blue;
+    cursor: pointer;
+}
+
+
+#username,#email,#phone,#password{
+    border: none;
+    padding: 10px;
+    padding-left: 3px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    outline: none;
+    color: #727272;
+}
+
+#email_notice{
+    font-family:"Ubuntu", sans-serif;
+    color: red; 
+    margin-top: 3px;
+    display: none;
+}
+
+#login_email_warning,#login_password_warning{
+    font-family:"Ubuntu", sans-serif;
+    color: red;
+    margin-top: 3px;
+    display: none;
+}
+

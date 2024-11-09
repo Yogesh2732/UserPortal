@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <div id="page">
+            <div id="login"  class="animate__animated animate__flipInY">
+                <h1 align="center">Login</h1>
+                <form id="login_frm" autocomplete="off">
+                    <input type="email" required="required" placeholder="Email Id" id="login_email">
+                    <small id="login_email_warning"><i class="fas fa-exclamation-circle"></i>  Email id not registered...</small>
+                    <input type="password" required="required" placeholder="Password" id="login_password">
+                    <small id="login_password_warning"><i class="fas fa-exclamation-circle"></i>  Wrong password..</small>
+                    <button type="submit" id="login_btn">Login</button>
+                </form>
+                <p>Don't have an account? <span id="signup_link">Sign up</span></p>
+
+            </div>
+            <div id="signup"  class="animate__animated animate__flipInY">
+                <form id="signup_frm" autocomplete="off">
+                    <h1 align="center">Sign up</h1>
+                    <input type="name" required="required" placeholder="Name" id="username">
+                    <input type="email" required="required" placeholder="Email" id="email">
+                    <small id="email_notice"><i class="fas fa-exclamation-circle"></i>Email id already exist..</small>
+                    <input type="number" required="required" placeholder="Phone" id="phone">
+                    <input type="password" required="required" placeholder="Password" id="password">
+                    <button type="submit" id="signup_btn">Signup</button> 
+                </form>
+                <p>Already have an account? <span id="login_link">Login</span></p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- start external javascript page -->
+    <script src="js/index.js"></script>
+    <script src="js/login_signup.js"></script>
+
+    
+</body>
+</html>

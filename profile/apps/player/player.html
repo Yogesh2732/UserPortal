@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="http://stpamitkumar.000webhostapp.com/fa_fa_icon_5_pro/icon.js"></script>
+</head>
+<body>
+    <div id="left">
+        <video id="video_player">
+            <source id="video_src" src="https://videos.pexels.com/video-files/3971351/3971351-uhd_2560_1440_25fps.mp4"></source>
+        </video>
+        <div id="progress_box">
+            <div id="progress_bar"></div>
+        </div>
+        <div id="control">
+            <div id="timing">
+                <p id="v_timing"> 00:00/00:00 </p>
+            </div>
+            <div id="play_tool">
+                <i class="fas fa-angle-double-left" id="left_btn"></i>
+                <i class="fa-duotone fa-solid fa-circle-play" id="play_btn"></i>
+                <i class="fas fa-angle-double-right" id="right_btn"></i>
+            </div>
+            <div id="other_tool">
+                <div id="volume_box">
+                    <input type="range" min="0" max="1" step="0.01" id="vol_control">
+                    <i class="fas fa-volume-up" id="volume"></i>
+                </div>
+
+                <div id="speed_box">
+                    <input type="range" min="0" max="2" step="0.25" id="speed_control">
+                    <i class="fas fa-tachometer-alt-fast" id="speed_icon"></i>
+                </div>
+               
+               
+                <i class="fas fa-expand" id="full_screen"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="right">
+        <div id="top">
+            <h3>Playlist</h3>
+
+            <input type="search" placeholder="Search Your Videos Here..." id="search">
+
+            <i class="fa-duotone fa-solid fa-circle-plus" id="open_v_box"></i>
+
+            <div id="add_video_box">
+                <h2>Add Videos</h2>
+                <form>
+                    <input type="text" id="video_name" placeholder="Enter Your Video Name...">
+                    <input type="text" id="video_link" placeholder="Enter Your Video Link...">
+                    <button type="submit" id="add_video_btn">Add</button>
+                </form>
+            </div>
+
+        </div>
+        <div id="bottom">
+  
+        </div>
+    </div>
+
+    <script src="js/player.js"></script>
+        
+</body>
+</html>
